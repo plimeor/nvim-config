@@ -43,6 +43,9 @@ local function install_plugins()
 		require("plimeor.plugins.noice"),
 		require("plimeor.plugins.crates"),
 
+		-- terminal
+		require("plimeor.plugins.terminal"),
+
 		-- debugger
 		require("plimeor.plugins.dap"),
 	}, {})
