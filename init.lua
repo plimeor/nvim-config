@@ -19,7 +19,11 @@ end
 
 local function install_plugins()
 	require("lazy").setup({
+		-- neovim lua development environment
+		require("plimeor.plugins.neodev"),
+		require("plimeor.plugins.treesitter"),
 		require("plimeor.file-explorer").plugins,
+		require("plimeor.plugins.telescope"),
 
 		require("plimeor.ui").plugins,
 
@@ -33,8 +37,6 @@ local function install_plugins()
 		require("plimeor.misc").plugins,
 		require("plimeor.git").plugins,
 
-		require("plimeor.plugins.telescope"),
-		require("plimeor.plugins.treesitter"),
 		require("plimeor.plugins.bufferline"),
 		require("plimeor.plugins.ufo"),
 		require("plimeor.plugins.reach"),

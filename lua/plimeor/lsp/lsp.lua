@@ -57,9 +57,6 @@ return {
 				},
 			}
 
-			-- Setup neovim lua configuration
-			require("neodev").setup()
-
 			local on_attach = lsp_utils.on_attach
 			local capabilities = lsp_utils.get_lsp_capabilities()
 
