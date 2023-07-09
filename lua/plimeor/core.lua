@@ -66,6 +66,8 @@ vim.o.mouse = "a"
 -- see `:help 'clipboard'`
 vim.o.clipboard = "unnamedplus"
 
+vim.opt.shell = "fish"
+
 -- decrease update time
 vim.o.updatetime = 50
 vim.o.timeout = true
