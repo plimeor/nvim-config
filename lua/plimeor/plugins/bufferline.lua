@@ -33,6 +33,9 @@ return {
 				show_close_icon = false,
 				show_buffer_close_icons = false,
 				separator_style = "slope",
+				indicator = {
+					style = "underline",
+				},
 				diagnostics = "nvim_lsp",
 				---@diagnostic disable-next-line: unused-local
 				diagnostics_indicator = function(count, level, _diagnostics_dict, _context)
