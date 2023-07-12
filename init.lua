@@ -19,13 +19,23 @@ end
 
 local function install_plugins()
 	require("lazy").setup({
-		-- neovim lua development environment
+
+		-- theme, ui
+		require("plimeor.plugins.theme"),
+		require("plimeor.plugins.bufferline"),
+		require("plimeor.plugins.lualine"),
+		require("plimeor.plugins.indent-blankline"),
+		require("plimeor.plugins.lspkind"),
+		require("plimeor.plugins.vim-illuminate"),
+
+		-- lua development
 		require("plimeor.plugins.neodev"),
-		require("plimeor.plugins.treesitter"),
+
+		-- file navigate
 		require("plimeor.file-explorer").plugins,
 		require("plimeor.plugins.telescope"),
 
-		require("plimeor.ui").plugins,
+		require("plimeor.plugins.treesitter"),
 
 		require("plimeor.motion").plugins,
 
@@ -37,7 +47,6 @@ local function install_plugins()
 		require("plimeor.misc").plugins,
 		require("plimeor.git").plugins,
 
-		require("plimeor.plugins.bufferline"),
 		require("plimeor.plugins.ufo"),
 		require("plimeor.plugins.reach"),
 		require("plimeor.plugins.noice"),

@@ -4,7 +4,7 @@ M.plugins = {
 	-- automatically adjusts 'shiftwidth' and 'expandtab' heuristically based on the current file
 	"tpope/vim-sleuth",
 	-- Useful plugin to show you pending keybinds.
-	{ "folke/which-key.nvim", opts = {} },
+	{ "folke/which-key.nvim",  opts = {} },
 
 	-- "gc" to comment visual regions/lines
 	{ "numToStr/Comment.nvim", opts = {} },
@@ -19,7 +19,7 @@ M.plugins = {
 			"nvim-tree/nvim-web-devicons", -- optional dependency
 		},
 		opts = {
-			theme = "catppuccin",
+			theme = "tokyonight",
 		},
 	},
 	{

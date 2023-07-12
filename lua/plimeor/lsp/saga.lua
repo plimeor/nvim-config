@@ -11,9 +11,6 @@ return {
 			symbol_in_winbar = {
 				enable = false,
 			},
-			ui = {
-				kind = require("catppuccin.groups.integrations.lsp_saga").custom_kind(),
-			},
 		})
 		vim.keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", { desc = "Rename" })
 		vim.keymap.set("n", "gd", "<cmd>Lspsaga goto_definition<CR>", { desc = "Goto Definition" })
