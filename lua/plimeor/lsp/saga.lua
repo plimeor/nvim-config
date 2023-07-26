@@ -11,12 +11,17 @@ return {
 			symbol_in_winbar = {
 				enable = false,
 			},
+			finder = {
+				keys = {
+					toggle_or_open = { "o", "<CR>" },
+				},
+			},
 		})
 		vim.keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", { desc = "Rename" })
 		vim.keymap.set("n", "gd", "<cmd>Lspsaga goto_definition<CR>", { desc = "Goto Definition" })
 		vim.keymap.set("n", "gp", "<cmd>Lspsaga peek_definition<CR>", { desc = "Goto Definition" })
 		vim.keymap.set("n", "gt", "<cmd>Lspsaga peek_type_definition<CR>")
-		vim.keymap.set("n", "gr", "<cmd>Lspsaga lsp_finder<CR>", { desc = "Goto References" })
+		vim.keymap.set("n", "gr", "<cmd>Lspsaga finder<CR>", { desc = "Goto References" })
 
 		vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", { desc = "Hover Document" })
 

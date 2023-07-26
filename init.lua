@@ -32,7 +32,7 @@ local function install_plugins()
 		require("plimeor.plugins.neodev"),
 
 		-- file navigate
-		require("plimeor.file-explorer").plugins,
+		require("plimeor.file-explorer.neo-tree"),
 		require("plimeor.plugins.telescope"),
 
 		require("plimeor.plugins.treesitter"),
@@ -61,7 +61,6 @@ local function install_plugins()
 end
 
 require("plimeor.core")
-require("plimeor.file-explorer").setup()
 require("plimeor.im-select").setup()
 
 install_plugin_manager()
